@@ -109,6 +109,12 @@
         font-size: 1.32rem;
         font-weight: 400;
     }
+
+    .checked-features-list.style-3 ul,
+    .checked-features-list.style-3 li {
+        font-size: 1.32rem;
+        font-weight: 400;
+    }
     @media (max-width: 991px) {
        
         .rr-section__title {
@@ -120,7 +126,11 @@
         }
         .checked-features-list.style-2 ul,
         .checked-features-list.style-2 li {
-            font-size: 1rem;
+            font-size: 1.1em;
+        }
+        .checked-features-list.style-3 ul,
+        .checked-features-list.style-3 li {
+            font-size: 1.1rem;
         }
     }
 
@@ -159,6 +169,7 @@
        position: relative;
        min-height:500px; 
        width: 100%;
+       border-radius: 9px;
        background-image: url('assets/img/banner-02.png');
        background-size: contain;
        background-repeat: no-repeat;
@@ -167,9 +178,15 @@
        align-items: center;
        justify-content: center;
    }
+   .bottom__area img {
+        border-radius: 9px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
     @media (max-width: 600px) {
         .banner__area {
-            min-height: 180px;
+            min-height: 170px;
         }
 
         .bottom__area {
@@ -207,8 +224,35 @@ body {
     }
 }
 
-
+    .single-service-card {
+        background: #f2f3f8;
+        border-radius: 9px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.17);
+        margin-bottom: 40px;
+        border: 1px solid #d0d6e1;
+    }
+    .single-service-card:hover {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+        
+    }
+    .single-service-card .content-block-img {
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .single-service-card img {
+        border-radius: 9px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @media (max-width: 991px) {
+        .single-service-card {
+            padding:1px 1px;
+        }
+    }
 </style>
+
 
 <!-- Schema.org structured data for LocalBusiness -->
 <script type="application/ld+json">
@@ -425,7 +469,7 @@ body {
                                 for homes and multifamily buildings. Whether you're planning a renovation or simply need more kitchen outlets, we deliver 
                                 reliable results with minimal disruption — all while staying within your budget.</p>
                             
-                           <div class="checked-features-list style-2">
+                           <div class="checked-features-list style-3">
                                 <ul>
                                     <li>Panel Upgrades Tailored For Your Project</li>
                                     <li>We Do Clean Work, Patch and Paint</li>
@@ -450,7 +494,7 @@ body {
                                 Rewiring often requires opening walls, which we carefully patch and paint with respect for those living in the home. 
                                 It's also a great time to add recessed lighting in your kitchen or living room, and install additional outlets where needed.
                             </p>
-                            <div class="checked-features-list style-2">
+                            <div class="checked-features-list style-3">
                                 <ul>
                                     <li>Professional Rewiring</li>
                                     <li>Minimal Disruption</li>
@@ -485,7 +529,7 @@ body {
                                 requirements which sometimes doesn't require electrical service upgrades. 
                                 Basic like-for-like panel replacement could be enough.
                             </p>
-                            <div class="checked-features-list style-2">
+                            <div class="checked-features-list style-3">
                                 <ul>
                                     <li>Meet Electrical Codes with Confidence</li>
                                     <li>Simple Panel Replacements, Big Impact</li>
@@ -505,7 +549,7 @@ body {
                                 includes design, trenching and three PG&E inspections. The closer your new meter socket is to the 
                                 utility's splice box, the less expensive your upgrade will be. Total Rewire is OQ certified.
                             </p>
-                            <div class="checked-features-list style-2 mb-md-30 mb-sm-30 mb-xs-30 mt-30">
+                            <div class="checked-features-list style-3 mb-md-30 mb-sm-30 mb-xs-30 mt-30">
                                 <ul>
                                     <li>Designed for Bay Area Architecture</li>
                                     <li>Seamless Collaboration with PGE</li>
@@ -536,7 +580,7 @@ body {
                                 office and bedrooms, we're here to enhance your everyday living. And when it's time to upgrade your main panel, 
                                 we're excited to ensure it's ready for both your current and future needs.
                             </p>
-                            <div class="checked-features-list style-2" data-wow-delay="1s">
+                            <div class="checked-features-list style-3" data-wow-delay="1s">
                                 <ul>
                                     <li>Safer, Smarter Electrical Systems</li>
                                     <li>Comfort Without Compromise</li>
@@ -558,15 +602,19 @@ body {
                             Whether it's upgrading your main panel to meet growing electrical demands, 
                             installing modern recessed lighting to brighten your living space, or ensuring your 
                             kitchen is fully powered for everyday convenience — we approach every project with 
-                            precision, care, and professionalism. We don't just complete jobs — we improve homes. 
-                            From start to finish, we'e dedicated to delivering reliable, high-quality results 
-                            that make your space safer, smarter, and more comfortable for years to come.
+                            precision, care, and professionalism. 
                         </p>
 
                     
                         <div  
                             class="bottom__area"> 
                         </div>
+                        <p class="paragraph-text">
+                        We don't just complete jobs — we improve homes. 
+                            From start to finish, we'e dedicated to delivering reliable, high-quality results 
+                            that make your space safer, smarter, and more comfortable for years to come.
+                            </p>
+
                     </div>
 
                 </div>
